@@ -39,6 +39,7 @@ body {
 .nav-sec {
 	background-color: #080807ad;
 	color: #fff;
+	z-index:1;
 }
 .nav-con {
 	width: 100%;
@@ -71,7 +72,7 @@ body {
 	background-color: #facb5c;
 }
 .nav-col3 button {
-	background-color: #111214b2;
+	background-color: #11121400;
     border: 2px solid #f0b002;
     border-radius: 20px;
     padding: 10px;
@@ -81,7 +82,6 @@ body {
 .nav-sec {
 	position: sticky;
 	top: 0;
-	z-index: 1;
 }
 /*Home Section*/
 .home-sec{
@@ -92,7 +92,7 @@ body {
 	padding-bottom: 200px;
 }
 .home-button button{
-    background-color: #111214b2;
+    background-color: #11121400;
     border: 2px solid #f0b002;
     border-radius: 20px;
     padding: 10px;
@@ -136,7 +136,23 @@ body {
 .home-icon i{
 	border: 1px solid #f0b002;
 	transition: all 1s;
-	
+	animation-name: circle;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes circle{
+	0%{
+		background: radial-gradient(#f0b002 50%, rgba(205, 164, 94, 0.4) 52%);
+		width:20px;
+		height:20px;
+		border-radius:50%;
+	}
+	100%{
+		background: radial-gradient(#f0b002 50%, rgba(205, 164, 94, 0.4) 52%);
+		width: 94px;
+        height: 94px; 
+	    border-radius:50%;
+	}
 }
 .home-icon:hover{
 	background-color: #f0b002;
@@ -157,17 +173,11 @@ body {
 	0%{
 		background-color: #000;
 	}
-	25%{
+	100%{
 		background-color: #fff;
 		width: 40px;
 		height: 30px;
-		border-radius: 20%;
-	}
-	50%{
-		background-color: #fff;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
+		
 	}
 }
 /*About Section*/
@@ -594,7 +604,7 @@ body {
 }
 .reserv-input input {
 	width: 95%;
-	height: 6vh;
+	padding: 10px;
 	color: #fff;
 	background-color: #000;
 }
@@ -642,8 +652,7 @@ body {
 }
 /*TEST SECTION*/
 .test-sec {
-	background-color: #171614;
-	position: relative;
+    background-color:#000;	
 	color: #fff;
 }
 .test-con {
@@ -651,12 +660,10 @@ body {
 	margin: auto;
 }
 .test-row {
-	padding-bottom: 100px;
+
 }
 .test-col2 {
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 50px;
+	
 }
 .test-hed1 {
 	color: #7d807e;
@@ -673,19 +680,22 @@ body {
 	font-size: 13px;
 	padding-top: 5px;
 }
-.test-col1 h4::after{
+.test-hed1::after{
 	content: "";
 	width: 200px;
 	height: 1px;
 	top: 60px;
-	left: 190px;
+	left: 130px;
 	background-color: #9c9a9a;
 	position: absolute;
+}
+.test-col1 {
+	position: relative;
 }
 .test-card {
 	background-color: #292828;
 	width: 90%;
-	height: 33vh;
+	border-radius: 5px;
 	letter-spacing: 1px;
 	display: flex;
 	align-items: center;
@@ -696,42 +706,24 @@ body {
 }
 .test-para {
 	margin: 0 15px 0 15px;
-}/*
+}
 .test-card1 {
 	position: absolute;
-	top: 325px;
-	left: 90px;
+	top: 240px;
+	left: 30px;
 }
-.test-card2 {
-	position: absolute;
-	top: 325px;
-	left: 500px;
+.test-para i {
+	font-size: 25px;
+	color: #f2b40a;
 }
-.test-card3 {
-	position: absolute;
-	top: 325px;
-	right: 320px;
-}
-.test-card4 {
-	position: absolute;
-	top: 680px;
-	left: 90px;
-}
-.test-card5 {
-	position: absolute;
-	top: 680px;
-	left: 500px;
-}*/
 .test-img img{
-	max-width: 100%;
+	max-width: 20%;
 	border-radius: 50%;
-	width: 80px;
-	height: 80px;
-	border: 7px solid #706963;
+	border: 5px solid #706963;
 }
 .test-box {
-	width: 33.3%;
-	padding-bottom: 150px;
+	width: 100%;
+	padding:  60px 0 100px;
 }
 /*GALLERY SECTION*/
 #gal-sec {
@@ -837,6 +829,15 @@ body {
 	top: 310px;
 	left: 130px;
 	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	
+}
+.chef-box:hover .chef-intro {
+	visibility: visible;
+	opacity: 1;
+	transition: all 2s;
+	transform: translatey(-40px);
 }
 .chef-icon {
 	padding-top: 15px;
@@ -970,6 +971,48 @@ body {
 	cursor: pointer;
 	background-color: #f0c243;
 }
+/*FOOTER SECTION*/
+.footer-sec {
+	background-color: #24221f;
+	
+}
+.footer-con {
+	width: 90%;
+	margin: auto;
+}
+.footer-top {
+	display: flex;
+	border-top: 2px solid #424241;
+	border-bottom: 2px solid #424241;
+}
+.footer-down {
+	
+}
+.footer-box {
+	width: 25%;
+}
+.footer-box h3 {
+	padding-bottom: 20px;
+}
+.footer-box address {
+	padding-bottom: 10px;
+}
+.footer-icon {
+	
+}
+.footer-icon i {
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background-color: #61615f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+}
+
 
 
 
