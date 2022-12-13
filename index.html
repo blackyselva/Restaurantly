@@ -35,7 +35,7 @@
 		</div>
 	</section>
 	<!-- NAV BAR -->
-	<section class="nav-sec">
+	<section  class="nav-sec">
 		<div class="nav-con">
 			<div class="nav-row">
 				<div class="nav-col1">
@@ -61,7 +61,7 @@
 		</div>
 	</section>	
 	<!-- HOME SECTION-->
-	<section class="home-sec">
+	<section id="home-sec">
 		<div class="home-con">
 			<div class="home-row">
 				<div class="home-col1">
@@ -75,8 +75,16 @@
 							<button>BOOK A TABLE</button>
 						</div>
 					</div>
-					<div class="home-icon">
-						<i class="fa fa-play"></i>
+					<div class="home-card1">
+						<a href="https://youtu.be/u6BOC7CDUTQ">
+							<div class="home-iconn">
+								<div class="home-icon1">
+									<div class="home-icon">
+										<i class="fa fa-play"></i>
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -153,13 +161,13 @@
 					<h1 class="menu-hed2">Check Our Tasty Menu</h1>
 				</div>	
 				<div class="menu-col2">
-					<a href="#">All</a>
-					<a href="#">Starters</a>
-					<a href="#">Salads</a>
-					<a href="#">Specialty</a>
+					<a href="#starters">All</a>
+					<a href="#starters">Starters</a>
+					<a href="#salads">Salads</a>
+					<a href="#specialty">Specialty</a>
 				</div>
 				<div class="menu-col3">
-					<div class="menu-box">
+					<div class="menu-box" id="starters">
 						<div class="menu-icon">
 							<img src="img/menu/lobster-bisque.jpg" alt="no image">
 						</div>
@@ -168,7 +176,7 @@
 							<p class="menu-para">Lorem, deren, trataro, filede, nerada</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="specialty">
 						<div class="menu-icon">
 							<img src="img/menu/bread-barrel.jpg" alt="no image">
 						</div>
@@ -177,7 +185,7 @@
 							<p class="menu-para">Lorem, deren, trataro, filede, nerada</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="starters">
 						<div class="menu-icon">
 							<img src="img/menu/cake.jpg" alt="no image">
 						</div>
@@ -186,7 +194,7 @@
 							<p class="menu-para">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="salads">
 						<div class="menu-icon">
 							<img src="img/menu/caesar.jpg" alt="no image">
 						</div>
@@ -195,7 +203,7 @@
 							<p class="menu-para">Lorem, deren, trataro, filede, nerada</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="specialty">
 						<div class="menu-icon">
 							<img src="img/menu/tuscan-grilled.jpg" alt="no image">
 						</div>
@@ -204,7 +212,7 @@
 							<p class="menu-para">Grilled chicken with provolone, artichoke hearts, and roasted red pesto</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="starters">
 						<div class="menu-icon">
 							<img src="img/menu/mozzarella.jpg" alt="no image">
 						</div>
@@ -213,7 +221,7 @@
 							<p class="menu-para">Lorem, deren, trataro, filede, nerada</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="salads">
 						<div class="menu-icon">
 							<img src="img/menu/greek-salad.jpg" alt="no image">
 						</div>
@@ -222,7 +230,7 @@
 							<p class="menu-para">Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="salads">
 						<div class="menu-icon">
 							<img src="img/menu/spinach-salad.jpg" alt="no image">
 						</div>
@@ -231,7 +239,7 @@
 							<p class="menu-para">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</p>
 						</div>
 					</div>
-					<div class="menu-box">
+					<div class="menu-box" id="specialty">
 						<div class="menu-icon">
 							<img src="img/menu/lobster-roll.jpg" alt="no image">
 						</div>
@@ -709,38 +717,110 @@
 					<p>Email: info@example.com</p>
 				</address>
 				<div class="footer-icon">
-					<i class="fa-brands fa-twitter"></i>
-					<i class="fa-brands fa-facebook"></i>
-					<i class="fa-brands fa-instagram"></i>
-					<i class="fa-brands fa-skype"></i>
-					<i class="fa-brands fa-linkedin"></i>
+					<ul>
+					<li><i class="fa-brands fa-twitter"></i></li>
+					<li><i class="fa-brands fa-facebook"></i></li>
+					<li><i class="fa-brands fa-instagram"></i></li>
+					<li><i class="fa-brands fa-skype"></i></li>
+					<li><i class="fa-brands fa-linkedin"></i></li>
+					</ul>
 				</div>
 			</div>
 			<div class="footer-box">
 				<h4>Useful Links</h4>
 				<ul>
-					<a href="#about-sec"><li>Home</li></a>
-					<a href="#about-sec"><li>About Us</li></a>
-					<a href="#about-sec"><li>Services</li></a>
-					<a href="#about-sec"><li>Terms of service</li></a>
-					<a href="#about-sec"><li>Privacy policy</li></a>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Home</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>About us</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Services</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Terms of services</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Privicy policy</li></a>
+						</div>
+					</div>
 				</ul>
 			</div>
 			<div class="footer-box">
 				<h4>Our Services</h4>
 				<ul>
-					<li>Web Design</li>
-					<li>Web Development</li>
-					<li>Product Management</li>
-					<li>Marketing</li>
-					<li>Graphic Design</li>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Web Design</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Web Development</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Product Management</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Marketing</li></a>
+						</div>
+					</div>
+					<div class="footer-iconname">
+						<div class="footer-icon1">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="footer-name">
+							<a href="#about-sec"><li>Graphic Design</li></a>
+						</div>
+					</div>
 				</ul>
 			</div>
-			<div class="footer-box">
+			<div class="footer-box1">
 				<h4>Our Newsletter</h4>
 				<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
 				<div class="footer-input">
-					<input type="email" required>
+					<input type="email" name="email" required>
 				</div>
 				<div class="footer-button">
 					<button>subscribe</button>
@@ -748,8 +828,11 @@
 			</div>
 		</div>
 		<div class="footer-down">
-			<p>© Copyright Restaurantly. All Rights Reserved</p>
-			<p>Designed by BootstrapMade</p>
+			<p><small>© Copyright <b>Restaurantly.</b> All Rights Reserved</small></p>
+			<p><small>Designed by <span>Selva</span></small></p>
+		</div>
+		<div class="back-to-top">
+			<a href="#home-sec"><i class="fa-solid fa-arrow-up"></i></a>
 		</div>
 		</div>
 	</section>
